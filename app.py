@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    mylist = ['Lihue', 'Waimea', 'Princeville', 'Napali Coast',
+    locations = ['Lihue', 'Waimea', 'Princeville', 'Napali Coast',
               'Smith Family Luau', 'Pearl Harbor/Polynesian Cultural Center',
               'Fern Grotto', 'Bali Hai Resort']
     return render_template('basic.html', locations=locations)
