@@ -23,7 +23,7 @@
     <h1>Welcome to the site!</h1>
         <ul>
             {% for location in locations %}
-            <li>{{location}}</li>
+            <li>{{location | capitalize}}</li>
             {% endfor %}
         </ul>
         <!--[if lt IE 7]>
